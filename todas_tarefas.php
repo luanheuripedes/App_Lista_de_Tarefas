@@ -22,7 +22,7 @@
 			function editar(id , txt_tarefa){
 				//criar um form de edição
 				let form = document.createElement('form');
-				form.action = '#';
+				form.action = 'tarefa_controller.php?acao=atualizar';
 				form.method = 'post';
 				form.className = 'row';
 
@@ -52,7 +52,7 @@
 
 				//incluir inputId no form
 				form.appendChild(inputId);
-				
+
 				//incluir o button no form
 				form.appendChild(button);
 
